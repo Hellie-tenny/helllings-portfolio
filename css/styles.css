@@ -1,0 +1,78 @@
+@font-face {
+  font-family: poppins;
+  src: url("./fonts/Montserrat-Light.ttf");
+}
+@font-face {
+  font-family: poppins-bold;
+  src: url("./fonts/Montserrat-Bold.ttf");
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+
+.button {
+  background-color: rgb(255, 188, 5);
+  padding: 0.5rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: black;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 0.54rem;
+}
+
+button {
+  background-color: rgb(255, 188, 5);
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+}
+body .container {
+  padding: 5rem;
+}
+body .container header {
+  display: flex;
+  justify-content: space-between;
+}
+body .container header div span {
+  color: rgb(255, 188, 5);
+  font-family: poppins-bold;
+}
+body .container header nav a {
+  color: rgb(255, 188, 5);
+  text-decoration: none;
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+body .container .landing {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+}
+body .container .landing .left {
+  flex: 1;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body .container .landing .left span {
+  color: rgb(255, 188, 5);
+  font-size: 5rem;
+  font-weight: 300;
+}
+body .container .landing .left p {
+  color: #fff;
+  line-height: 2rem;
+}
+body .container .landing .left a {
+  margin: 1rem 0;
+}
+body .container .landing .right {
+  height: 15rem;
+  flex: 1;
+}/*# sourceMappingURL=styles.css.map */
