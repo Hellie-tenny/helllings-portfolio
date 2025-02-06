@@ -24,6 +24,14 @@
   border-radius: 0.54rem;
 }
 
+p {
+  color: #fff;
+}
+
+.page {
+  min-height: 100vh;
+}
+
 button {
   background-color: rgb(255, 188, 5);
 }
@@ -50,12 +58,10 @@ body .container header nav a {
 }
 body .container .landing {
   display: flex;
-  min-height: 100vh;
   align-items: center;
 }
 body .container .landing .left {
   flex: 1;
-  height: 15rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -73,6 +79,30 @@ body .container .landing .left a {
   margin: 1rem 0;
 }
 body .container .landing .right {
-  height: 15rem;
   flex: 1;
+}
+body .container .landing .right img {
+  height: 100%;
+}
+body .container .intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .container .intro p {
+  line-height: 2rem;
+}
+body .container .projects .cards-container {
+  display: flex;
+  justify-content: space-between;
+}
+body .container .projects .cards-container .project-card {
+  margin: 0 1rem;
+  overflow: hidden;
+}
+body .container .projects .cards-container .project-card img {
+  width: 100%;
+}
+body .container .projects .cards-container .project-card p {
+  padding: 1rem 0;
 }/*# sourceMappingURL=styles.css.map */

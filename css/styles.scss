@@ -21,7 +21,7 @@
 $accent : rgb(255, 188, 5);
 
 // global styles
-.button{
+.button {
     background-color: $accent;
     padding: .5rem;
     width: fit-content;
@@ -31,9 +31,17 @@ $accent : rgb(255, 188, 5);
     border-radius: .54rem;
 }
 
+p{
+    color: #fff;
+}
+
+.page {
+    min-height: 100vh;
+}
+
 
 //////////////////////////////////////////////////////////////////////////////////////
-button{
+button {
     background-color: $accent;
 }
 
@@ -67,17 +75,15 @@ body {
 
         .landing {
             display: flex;
-            min-height: 100vh;
             align-items: center;
 
             .left {
                 flex: 1;
-                height: 15rem;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
 
-                span{
+                span {
                     color: $accent;
                     font-size: 5rem;
                     font-weight: 300;
@@ -88,16 +94,46 @@ body {
                     line-height: 2rem;
                 }
 
-                a{
+                a {
                     margin: 1rem 0;
                 }
             }
 
-            .right{
-                height: 15rem;
-                flex: 1;                                                                                                                                                      
-                img{
-                //    height: 200%;
+            .right {
+                flex: 1;
+
+                img {
+                    height: 100%;
+                }
+            }
+        }
+
+        .intro{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            p{
+                line-height: 2rem;
+            }
+        }
+
+        .projects{
+            .cards-container{
+                display: flex;
+                justify-content: space-between;
+
+                .project-card{
+                    margin: 0 1rem;
+                    overflow: hidden;
+
+                    img{
+                        width: 100%;
+                    }
+
+                    p{
+                        padding: 1rem 0;
+                    }
                 }
             }
         }
