@@ -30,21 +30,28 @@ p {
 
 .page {
   min-height: 100vh;
+  padding: 5rem;
 }
 
 button {
   background-color: rgb(255, 188, 5);
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: proximity;
+}
+
 body {
   background-color: rgb(0, 0, 0);
-}
-body .container {
-  padding: 5rem;
 }
 body .container header {
   display: flex;
   justify-content: space-between;
+  position: sticky;
+  padding: 1rem 5rem;
+  top: 0;
+  background-color: black;
 }
 body .container header div span {
   color: rgb(255, 188, 5);
@@ -61,7 +68,7 @@ body .container .landing {
   align-items: center;
 }
 body .container .landing .left {
-  flex: 1;
+  flex: 3;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -69,7 +76,7 @@ body .container .landing .left {
 body .container .landing .left span {
   color: rgb(255, 188, 5);
   font-size: 5rem;
-  font-weight: 300;
+  font-weight: 600;
 }
 body .container .landing .left p {
   color: #fff;
@@ -86,10 +93,14 @@ body .container .landing .right img {
 }
 body .container .intro {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
-body .container .intro p {
+body .container .intro div img {
+  width: 60%;
+  margin-right: 5rem;
+}
+body .container .intro div p {
   line-height: 2rem;
 }
 body .container .projects .cards-container {
@@ -105,4 +116,79 @@ body .container .projects .cards-container .project-card img {
 }
 body .container .projects .cards-container .project-card p {
   padding: 1rem 0;
+}
+body .container footer {
+  padding: 2rem;
+  color: #fff;
+}
+body .container footer .contact_me {
+  display: flex;
+  justify-content: center;
+}
+body .container footer .contact_me i {
+  padding: 0.5rem;
+  cursor: pointer;
+}
+body .container footer .contact_me i:hover {
+  color: rgb(255, 188, 5);
+}
+body .container footer span {
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+
+@media only screen and (max-width: 660px) {
+  .page {
+    padding: 0;
+  }
+  .container {
+    padding: 0;
+  }
+  .container .header {
+    padding: 1rem;
+    z-index: 1;
+  }
+  .container .landing {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .container .landing .left {
+    padding: 1rem;
+    position: absolute;
+    bottom: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.281), rgb(0, 0, 0));
+    padding-bottom: 5rem;
+  }
+  .container .landing .left span {
+    font-size: 1rem;
+  }
+  .container .intro {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .intro div {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+  }
+  .container .intro div img {
+    width: 100%;
+    margin: auto;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .container .projects .cards-container {
+    flex-direction: column;
+  }
+  .container .projects .cards-container .project-card {
+    padding: 2rem 0;
+  }
 }/*# sourceMappingURL=styles.css.map */
